@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rizos Window Tint &amp; Auto Detailing | Dallas, TX</title>
+<meta name="description" content="Rizos Window Tint & Auto Detailing — professional window tinting from $99, detailing & ceramic coating in Dallas, TX. Call or text 469-878-4363.">
+<style>
+  :root{
+    --black:#141619; --char:#22262A; --char2:#2A2F34;
+    --amber:#D9A441; --amber-d:#B9852F;
+    --paper:#E8EAE6; --steel:#9AA0A6; --ink:#2B2F33;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden;line-height:1.6}
+  .cond{font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(20,22,25,.97);border-bottom:2px solid var(--amber)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:11px;padding-bottom:11px}
+  .brand{color:var(--paper);text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:800}
+  .brand span{font-size:1.05rem}
+  .brand small{display:block;font-size:.62rem;color:var(--steel);font-weight:400;letter-spacing:.14em}
+  .navlinks{display:flex;gap:20px;align-items:center}
+  .navlinks a{color:var(--paper);text-decoration:none;font-size:.85rem}
+  .navlinks a:hover{color:var(--amber)}
+  .nav-cta{background:var(--amber);color:#141619!important;font-weight:800;padding:9px 20px;transform:skewX(-10deg);display:inline-block}
+  .nav-cta b{display:inline-block;transform:skewX(10deg)}
+  .nav-cta:hover{background:var(--amber-d)}
+  @media(max-width:640px){.navlinks a:not(.nav-cta){display:none}}
+  /* HERO — carbon fiber texture */
+  .hero{background:
+    repeating-linear-gradient(45deg,rgba(255,255,255,.022) 0 2px,transparent 2px 6px),
+    repeating-linear-gradient(-45deg,rgba(255,255,255,.022) 0 2px,transparent 2px 6px),
+    linear-gradient(150deg,#101214 0%,var(--black) 55%,#1B1F23 100%);
+    color:var(--paper);position:relative}
+  .hero .wrap{padding:80px 20px 0}
+  .tag{display:inline-block;background:var(--amber);color:#141619;font-weight:800;font-size:.8rem;padding:7px 16px;transform:skewX(-10deg);margin-bottom:20px}
+  .tag b{display:inline-block;transform:skewX(10deg)}
+  .hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:900;line-height:1.02;color:var(--paper);margin-bottom:12px}
+  .hero h1 .amber{color:var(--amber)}
+  .hero .lede{color:var(--steel);font-size:clamp(1rem,2.4vw,1.2rem);max-width:32rem;margin-bottom:28px}
+  .price-strip{display:inline-flex;align-items:baseline;gap:12px;border-left:4px solid var(--amber);padding-left:18px;margin-bottom:30px}
+  .price-strip .from{color:var(--steel);font-size:.85rem}
+  .price-strip .num{font-size:3rem;font-weight:900;color:var(--paper);line-height:1}
+  .price-strip .num small{font-size:1.1rem;color:var(--amber)}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;padding-bottom:70px}
+  .btn{padding:16px 32px;font-weight:800;text-decoration:none;font-size:1rem;min-height:54px;display:inline-block;transform:skewX(-10deg)}
+  .btn b{display:inline-block;transform:skewX(10deg)}
+  .btn-amber{background:var(--amber);color:#141619}
+  .btn-amber:hover{background:var(--amber-d)}
+  .btn-line{border:2px solid var(--steel);color:var(--paper)}
+  .btn-line:hover{border-color:var(--amber);color:var(--amber)}
+  .slash{height:44px;background:var(--amber);clip-path:polygon(0 100%,100% 100%,100% 0);margin-top:-1px}
+  /* SERVICES — spec sheet */
+  .spec{background:var(--paper);padding:64px 0 80px}
+  .eyebrow{color:var(--amber-d);font-weight:800;font-size:.78rem;letter-spacing:.24em;margin-bottom:8px}
+  h2.sec{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:900;color:var(--ink);margin-bottom:10px}
+  .sec-sub{color:#5C6165;max-width:36rem;margin-bottom:36px}
+  .spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:2px solid var(--ink)}
+  @media(max-width:640px){.spec-grid{grid-template-columns:1fr}}
+  .spec-cell{padding:28px 26px;border-bottom:2px solid var(--ink);position:relative;background:#fff}
+  .spec-cell:nth-child(odd){border-right:2px solid var(--ink)}
+  @media(max-width:640px){.spec-cell:nth-child(odd){border-right:none}}
+  .spec-cell:last-child,.spec-cell:nth-last-child(2){border-bottom:none}
+  @media(max-width:640px){.spec-cell:nth-last-child(2){border-bottom:2px solid var(--ink)}.spec-cell:last-child{border-bottom:none}}
+  .spec-num{font-size:.78rem;font-weight:800;color:var(--amber-d);letter-spacing:.2em;margin-bottom:8px}
+  .spec-cell h3{font-size:1.25rem;font-weight:800;margin-bottom:6px}
+  .spec-cell p{font-size:.93rem;color:#5C6165}
+  .spec-cell .from{margin-top:10px;font-size:.85rem;font-weight:800;color:var(--ink)}
+  .spec-cell .from span{color:var(--amber-d)}
+  /* TINT visual */
+  .tint-band{background:var(--black);color:var(--paper);padding:72px 0;clip-path:polygon(0 3vw,100% 0,100% calc(100% - 3vw),0 100%)}
+  .tint-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  @media(max-width:760px){.tint-grid{grid-template-columns:1fr}}
+  .tint-visual{border-radius:10px;overflow:hidden;border:2px solid var(--char2)}
+  .tint-top{background:linear-gradient(180deg,#C9D2D8,#9FB0B8);padding:34px 20px;text-align:center;color:#3A4046;font-weight:800}
+  .tint-bottom{background:linear-gradient(180deg,#2E3438,#141619);padding:34px 20px;text-align:center;color:var(--paper);font-weight:800}
+  .tint-bottom small,.tint-top small{display:block;font-weight:400;font-size:.8rem;margin-top:4px;color:inherit;opacity:.75}
+  .tint-list{list-style:none;margin-top:22px}
+  .tint-list li{padding:10px 0;border-bottom:1px solid var(--char2);color:var(--steel);font-size:.95rem;display:flex;gap:12px}
+  .tint-list li strong{color:var(--amber)}
+  /* WHY */
+  .why{padding:80px 0;background:#fff}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:760px){.why-grid{grid-template-columns:1fr}}
+  .why-card{background:var(--paper);padding:28px;border-top:5px solid var(--amber)}
+  .why-card h3{font-size:1.1rem;font-weight:800;margin-bottom:8px}
+  .why-card p{font-size:.92rem;color:#5C6165}
+  /* CONTACT */
+  .contact{background:linear-gradient(150deg,#101214,var(--black));color:var(--paper);text-align:center;padding:84px 0;clip-path:polygon(0 3vw,100% 0,100% 100%,0 100%)}
+  .contact h2.sec{color:var(--paper)}
+  .contact p{color:var(--steel);max-width:30rem;margin:0 auto 28px}
+  .big-phone{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:900;color:var(--amber);text-decoration:none;display:block;margin-bottom:22px}
+  footer{background:#0C0D0E;color:#6B7075;padding:30px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+  footer a{color:var(--amber);text-decoration:none}
+  .credit{font-size:.78rem;color:#4C5157}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="8" width="28" height="16" rx="2" fill="#22262A" stroke="#D9A441" stroke-width="2"/><rect x="5" y="11" width="12" height="10" fill="#D9A441" opacity=".85"/><rect x="19" y="11" width="8" height="10" fill="#141619"/></svg>
+      <span>RIZOS<small class="cond">TINT &amp; DETAILING</small></span>
+    </a>
+    <div class="navlinks cond">
+      <a href="#services">Services</a>
+      <a href="#tint">Tint</a>
+      <a href="#why">Why Rizos</a>
+      <a href="#contact" class="nav-cta"><b>Book Now</b></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="tag cond"><b>Now booking — Dallas, TX</b></span>
+    <h1 class="cond">DARKER. COOLER.<br><span class="amber">SHARPER.</span></h1>
+    <p class="lede">Professional window tinting and full auto detailing in Dallas. Clean installs, premium film, and a finish that turns heads — without the dealership price.</p>
+    <div class="price-strip cond">
+      <span class="from">TINT FROM</span><span class="num"><small>$</small>99</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-amber cond" href="tel:+14698784363"><b>Call / Text 469-878-4363</b></a>
+      <a class="btn btn-line cond" href="mailto:victorarguetatint469@gmail.com"><b>Email Us</b></a>
+    </div>
+  </div>
+  <div class="slash"></div>
+</header>
+
+<section class="spec" id="services">
+  <div class="wrap">
+    <div class="eyebrow cond">Service menu</div>
+    <h2 class="cond">Pick your upgrade</h2>
+    <p class="sec-sub">Every job gets the same treatment: careful prep, quality materials, and a walk-around inspection before you drive off.</p>
+    <div class="spec-grid">
+      <div class="spec-cell"><div class="spec-num cond">01</div><h3 class="cond">Automotive Window Tint</h3><p>Full-vehicle tint in legal Texas shades. Cuts heat and glare, protects your interior from UV fade.</p><div class="from cond">FROM <span>$99</span></div></div>
+      <div class="spec-cell"><div class="spec-num cond">02</div><h3 class="cond">Home &amp; Office Tint</h3><p>Residential and commercial film that lowers cooling bills and kills afternoon glare.</p><div class="from cond">FREE <span>QUOTE</span></div></div>
+      <div class="spec-cell"><div class="spec-num cond">03</div><h3 class="cond">Interior Detailing</h3><p>Deep shampoo, steam, leather conditioning, and trim restoration — cabin looks showroom-new.</p><div class="from cond">FROM <span>$89</span></div></div>
+      <div class="spec-cell"><div class="spec-num cond">04</div><h3 class="cond">Exterior Wash &amp; Wax</h3><p>Hand wash, clay treatment, machine polish and wax for a deep wet-look shine.</p><div class="from cond">FROM <span>$59</span></div></div>
+      <div class="spec-cell"><div class="spec-num cond">05</div><h3 class="cond">Ceramic Coating</h3><p>Multi-year paint protection with extreme gloss and hydrophobic beading.</p><div class="from cond">FROM <span>$299</span></div></div>
+      <div class="spec-cell"><div class="spec-num cond">06</div><h3 class="cond">Headlight Restoration</h3><p>Cloudy, yellowed lenses polished back to crystal clear — see better at night.</p><div class="from cond">FROM <span>$49</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint-band" id="tint">
+  <div class="wrap tint-grid">
+    <div>
+      <div class="eyebrow cond">Why tint</div>
+      <h2 class="sec cond" style="color:var(--paper)">More than looks</h2>
+      <p style="color:var(--steel)">Dallas summers are brutal. Quality tint is functional armor for your car — and your skin.</p>
+      <ul class="tint-list cond">
+        <li><strong>✓</strong> Blocks up to 99% of harmful UV rays</li>
+        <li><strong>✓</strong> Cuts cabin heat — easier on your A/C</li>
+        <li><strong>✓</strong> Kills glare for safer daytime driving</li>
+        <li><strong>✓</strong> Adds privacy &amp; theft deterrence</li>
+      </ul>
+    </div>
+    <div class="tint-visual">
+      <div class="tint-top cond">UNTINTED<small>glare · heat · faded interior</small></div>
+      <div class="tint-bottom cond">RIZOS TINT<small>cool · private · protected</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="eyebrow cond">Why Rizos</div>
+    <h2 class="cond">Done right, or not at all</h2>
+    <p class="sec-sub">No rushed jobs. No bubbling film. No "good enough."</p>
+    <div class="why-grid">
+      <div class="why-card"><h3 class="cond">Premium film only</h3><p>We use quality tint film that won't purple, peel, or bubble in Texas heat.</p></div>
+      <div class="why-card"><h3 class="cond">Fast turnaround</h3><p>Most full-vehicle tints done same day. Drop off in the morning, drive out by evening.</p></div>
+      <div class="why-card"><h3 class="cond">Straight pricing</h3><p>Quote before we start, price locked after. What we say is what you pay.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow cond">Get a quote</div>
+    <h2 class="cond">Ready to black it out?</h2>
+    <p class="cond">Call, text, or email — tell us your vehicle and what you want done, and we'll shoot back a price fast.</p>
+    <a class="big-phone cond" href="tel:+14698784363">469-878-4363</a>
+    <div class="cta-row" style="justify-content:center;padding-bottom:0">
+      <a class="btn btn-amber cond" href="mailto:victorarguetatint469@gmail.com"><b>Email for a Quote</b></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Rizos Window Tint &amp; Auto Detailing · Dallas, TX · <a href="tel:+14698784363">469-878-4363</a></div>
+    <div class="credit">Demo website by Wahab Codes</div>
+  </div>
+</footer>
+
+</body>
+</html>
